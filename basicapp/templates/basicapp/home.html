@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpendra Singh | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'basicapp/css/style.css' %}">
+</head>
+    <body>
+
+    <!-- Header -->
+     
+    <header class="header">
+
+        <div class="logo">
+            Pushpendra
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Hi, I'm Pushpendra Singh 🧑‍💻 </h1>
+
+            <p>
+                I am learning Full Stack Web Development.
+                This is my first responsive website built using
+                HTML and CSS.
+            </p>
+
+            <button class="btn">
+                Learn More
+            </button>
+
+        </div>
+
+        <div class="hero-img">
+
+            <img src="{% static 'basicapp/images/profile.png' %}" alt="Pushpendra Singh">
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Pushpendra Singh | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

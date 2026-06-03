@@ -1,0 +1,324 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    font-family:Arial, sans-serif;
+
+    background-image:url("https://www.icmef.org/wp-content/uploads/2018/10/Web-Page-Background-Color.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
+
+    min-height:100vh;
+}
+
+.header{
+
+    width:100%;
+
+    padding:18px 60px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:yellow;
+
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+    font-size:2rem;
+    font-weight:bold;
+
+    color:black;
+
+    letter-spacing:1px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar ul{
+
+    list-style:none;
+
+    display:flex;
+    gap:30px;
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:black;
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:0.3s;
+}
+
+/* Hover Line Effect */
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0;
+    height:2px;
+
+    background:#22c55e;
+
+    transition:0.3s;
+}
+
+.navbar a:hover::after{
+    width:100%;
+}
+
+.navbar a:hover{
+    color:#22c55e;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:60px;
+
+    padding:60px;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    line-height:1.2;
+    color: black;
+}
+
+.hero-content span{
+    color:#22c55e;
+}
+
+.hero-content p{
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+    color:red;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.hero-content button{
+
+    padding:14px 32px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#22c55e;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.hero-content button:hover{
+
+    background:rgb(136, 229, 136);
+
+    transform:translateY(-3px);
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-img{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+}
+
+.hero-img img{
+
+    width:380px;
+
+    max-width:100%; 
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+
+    transition:0.4s;
+}
+
+.hero-img img:hover{
+
+    transform:scale(1.05);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    background:rgba(0,0,0,0.5);
+
+    text-align:center;
+
+    padding:20px;
+
+    font-size:15px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:992px){
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .hero{
+        gap:40px;
+    }
+}
+
+/* Tablet */
+
+@media(max-width:768px){
+
+    .header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+    }
+
+    .navbar ul{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+    }
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        padding:40px 20px;
+    }
+
+    .hero-content h1{
+
+        font-size:2.5rem;
+    }
+
+    .hero-content p{
+
+        font-size:1rem;
+    }
+
+    .hero-img img{
+
+        width:280px;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .hero-content h1{
+
+        font-size:2rem;
+    }
+
+    .hero-content button{
+
+        width:100%;
+    }
+
+    .hero-img img{
+
+        width:220px;
+    }
+}
